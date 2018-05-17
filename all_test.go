@@ -93,7 +93,7 @@ func TestClient_SetBlacklist(t *testing.T) {
 	Expect(t, text).ToBe("He110, WorId!")
 }
 
-func TestClient_SetLanguage(t *testing.T) {
+/* func TestClient_SetLanguage(t *testing.T) {
 	client := NewClient()
 	defer client.Close()
 	client.SetLanguage("deu")
@@ -101,7 +101,7 @@ func TestClient_SetLanguage(t *testing.T) {
 	_, err := client.Text()
 	Expect(t, err).Not().ToBe(nil)
 }
-
+*/
 func TestClient_ConfigFilePath(t *testing.T) {
 
 	if os.Getenv("TESS_LSTM") == "1" {
